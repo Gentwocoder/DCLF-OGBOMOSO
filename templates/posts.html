@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Deeper Life Campus Fellowship, Ogbomoso">
+	<meta name="keywords" content="Deeper Life, Campus, Fellowship, Church, Christian, Holiness">
+	<link href="{% static 'bootstrap-5.2.1-dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Trilong|Audiowide|Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" href="{% static 'img/favicon.jpeg' %}">
+	<title>DLCF OGBOMOSO</title>
+		<style>
+		.leftcolumn {
+  			float: left;
+  			width: 100%;
+		}
+
+		.card {
+   			background-color: white;
+   			padding: 20px;
+   			margin-top: 20px;
+		}
+
+		.row:after {
+  			content: "";
+  			display: table;
+  			clear: both;
+		}
+
+	</style>
+</head>
+<body>
+		<div id="preloader">
+
+	</div>
+	  <div class="box">
+			  <h1>Deeper Life Campus Fellowship</h1>
+			  <h3>Lautech Chapter, Ogbomoso</h3>
+	  </div>
+	  <br>
+	  
+<div class="hot">
+<h2>Hot titles:</h2>
+<a href="#">Eternity</a>
+<a href="#">Faded</a>
+<a href="#">Mortal</a>
+<a href="#">The Secret Of The Secret Place</a>
+<a class="All" style="color: #121d6e; text-decoration: underline;" href="#">See All Titles<!--put a modal box here to contain the titles--></a></div>
+</div>
+
+<section class="main">
+<h1 style="text-align: center;">BLOG POSTS</h1>
+<div class="row">
+	<div class="leftcolumn">
+		<div class="card">
+				<h2>{{ posts.title }}</h2>
+				<h4>Author: {{ posts.author }}</h4>
+				<h5 style="color: black;">{{ posts.created_at }}</h5><br>
+				{% if posts.blog_image %}
+				<img src="{{ posts.blog_image.url }}" alt="">
+				{% endif %}
+				<h3 style="color: black;font-size: 20px;">{{ posts.body }}</h3>
+		</div>
+	</div>
+</div>
+
+<br>
+<hr class="rounded">
+<br>
+
+					   <br>
+
+	  <script src="{% static 'bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js'  %}" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	  <script>
+	var loader = document.getElementById("preloader");
+	window.addEventListener("load", function(){
+		loader.style.display = "none";
+	})
+</script>
+	  <footer>
+		<p>Copyright © DEEPER LIFE CAMPUS FELLOWSHIP <br>Ogbomoso, Lautech. <br>2022</p>
+</footer>
+</body>
+</html>

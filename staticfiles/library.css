@@ -1,0 +1,33 @@
+.books{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.card{
+    float: left;
+}
+
+.card-text{
+ text-align: left;
+ padding: 0 3px;
+}
+
+.secttion{
+	clear: both;
+	max-width: 650px;
+	margin: 0 auto;
+}
+
+.bkimg{
+	width: 50%;
+	margin: 0 auto;
+}
+
+.card-title{
+	font-weight: bold;
+}
+
+.sectiions{
+	margin-top: 20px;
+}

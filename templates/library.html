@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Deeper Life Campus Fellowship, Ogbomoso">
+	<meta name="keywords" content="Deeper Life, Campus, Fellowship, Church, Christian, Holiness">
+	<link href="{% static 'bootstrap-5.2.1-dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="{% static 'library.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Trilong|Audiowide|Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" href="{% static './img/favicon.jpeg' %}">
+	<title>Library | DLCF OGBOMOSO</title>
+</head>
+<body>
+	<div id="preloader">
+
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="/">
+			  <img src="{% static './img/favicon.jpeg' %}" alt="" width="35px" style="margin-top: 10px; float: left;">
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div id="sect">
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item">
+					  <a class="nav-link" aria-current="page" href="/">Home</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="blogs">Blogs</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link active" href="library">Library</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="bookstore">Bookshop</a>
+					</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="events">Events</a>
+			  		</li>
+					<li class="nav-item">
+					  <a class="nav-link" href="help">Helps & Enquiries</a>
+					</li>
+					
+				  </ul>
+				 
+				</div>
+		  </div>
+		</div>
+	  </nav>
+	  <div class="box">
+			  <h1>Deeper Life Campus Fellowship</h1>
+			  <h3>Lautech Chapter, Ogbomoso</h3>
+	  </div>
+	  <br>
+	  <div class="text-center">
+		<h2>Welcome to The DLCF Ogbomoso E-Library</h2>
+		<p>Unlimited access to academic, spiritual, financial, self-development and motivational resources in ebooks, videos and other digital formats.</p>
+		<br>
+		<!--a large box container here to contain titles-->
+		<h2>Recommended</h2>
+	  </div>
+
+  <div class="books"">
+	{% for book in books %}
+    <div class="card m-2 clearfix" style="width: 12rem;" data-aos="zoom-in" data-aos-delay="200">
+		<img src="{% static './img/groupK.png' %}" class="bkimg" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{book.name}}</h5>
+        <p class="card-text">{{ book.details }}</p>
+		<button class="btn btn-primary">Download</button>
+      </div>
+    </div>
+	{% endfor %}
+
+  </div>
+ 
+<br><br><br><br><br><br>
+<div class="secttion">
+<div class="text-center">
+	<h1>SECTIONS</h1>
+</div>
+<br>
+<div class="border border-dark p-2">
+	<div class="text-center">
+		<h1>Spiritual</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti aspernatur quae expedita atque voluptatum.</p>
+		<a href="#" class="btn btn-danger col-md-3">Click here</a>
+	</div>
+	<br>
+	<div class="text-center">
+		<h1>Academic</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti aspernatur quae expedita atque voluptatum.</p>
+		<a href="#" class="btn btn-danger col-md-3">Click here</a>
+	</div>
+	<br>
+	<div class="text-center">
+		<h1>Financial/Motivational</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti aspernatur quae expedita atque voluptatum.</p>
+		<a href="#" class="btn btn-danger col-md-3">Click here</a>
+	</div>
+	<br>
+	<div class="text-center">
+		<h1>Skills Acquisition/Self Development</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati corrupti aspernatur quae expedita atque voluptatum.</p>
+		<a href="#" class="btn btn-danger col-md-3">Click here</a>
+	</div>
+</div>
+</div>
+<br>
+	  <script src="{% static 'bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js'  %}" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+	  <script>
+	var loader = document.getElementById("preloader");
+	window.addEventListener("load", function(){
+		loader.style.display = "none";
+	})
+</script>
+</body>
+<footer>
+		<p>Copyright © DEEPER LIFE CAMPUS FELLOWSHIP <br>Ogbomoso, Lautech. <br>2022</p>
+</footer>
+</html>

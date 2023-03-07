@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deeper Life Campus Fellowship, Ogbomoso">
+	<meta name="keywords" content="Deeper Life, Campus, Fellowship, Church, Christian, Holiness">
+	<link href="{% static 'bootstrap-5.2.1-dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Trilong|Audiowide|Oswald">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" href="{% static '/img/favicon.jpeg' %}">
+	<title>Events | DLCF OGBOMOSO</title>
+</head>
+<body>
+	<div id="preloader">
+
+	</div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+		<img src="{% static '/img/favicon.jpeg' %}" alt="" width="35px" style="margin-top: 10px; float: left;">
+	</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="sect" class="w-90">
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="/">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="blogs">Blogs</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="library">Library</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="bookstore">Bookshop</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="events">Events</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="help">Help & Enquiries</a>
+			  </li>
+			  
+			</ul>
+			
+		  </div>
+	</div>
+  </div>
+</nav>
+<div class="box">
+		<h1>Deeper Life Campus Fellowship</h1>
+		<h3>Lautech Chapter, Ogbomoso</h3>
+</div>
+<h3 style="color: #121d6e; margin:15px;  "><marquee direction="right">This page is under construction</marquee></h3>
+<script src="{% static 'bootstrap-5.2.1-dist/js/bootstrap.bundle.min.js'  %}" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script>
+	var loader = document.getElementById("preloader");
+	window.addEventListener("load", function(){
+		loader.style.display = "none";
+	})
+</script>
+</body>
+</html>
